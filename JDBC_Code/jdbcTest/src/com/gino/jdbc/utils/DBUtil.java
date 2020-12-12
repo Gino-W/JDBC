@@ -36,8 +36,7 @@ public class DBUtil {
      * @throws SQLException
      */
     public static Connection getConnection() throws SQLException {
-        Connection comm = DriverManager.getConnection("jdbc:mysql://localhost:3306/bjpowernode", "root", "123456");
-        return null;
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/bjpowernode", "root", "123456");
     }
 
 
